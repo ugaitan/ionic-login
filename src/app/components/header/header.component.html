@@ -1,0 +1,38 @@
+<ion-toolbar color="primary">
+    <ion-buttons slot="start">
+        <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="secondary">
+        <ion-button (click)="irLogin();">
+            <ion-icon slot="icon-only" name="person-outline" ></ion-icon>
+        </ion-button>
+    </ion-buttons>
+</ion-toolbar>
+
+
+<ion-menu side="start" menuId="m_principal" contentId="main2">
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-title>{{paginaLlamadora}}</ion-title>
+            
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <ion-item>
+                Menu 1
+            </ion-item>
+            <ion-item>
+                Menu 2
+            </ion-item>
+            <ion-item>
+                Menu 3
+            </ion-item>
+            <ion-item>
+                Menu 4
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<div id="main2"></div>
